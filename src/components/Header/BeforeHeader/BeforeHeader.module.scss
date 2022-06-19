@@ -1,0 +1,62 @@
+@import "../../../variables/variables.scss";
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.phone {
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.phone:hover {
+    color: $text-color-hover;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    top: -1px;
+    left: -17px;
+}
+
+.number {
+    position: relative;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: $text-color;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: 0.35s;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: $text-color-hover;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

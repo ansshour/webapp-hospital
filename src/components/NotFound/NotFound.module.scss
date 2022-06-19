@@ -1,0 +1,24 @@
+.error {
+    font-size: 40px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    color: rgb(80, 79, 79);
+}
+
+.link {
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: black;
+}
