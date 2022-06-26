@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/esm/Container'
-import styles from "./Slider.module.scss";
+import styles from "./Slider.module.css";
 
 export const Slider = () => {
     return (

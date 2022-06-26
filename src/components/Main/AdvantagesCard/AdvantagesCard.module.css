@@ -1,0 +1,20 @@
+@import "../../../variables/variables.css";
+
+.cardWrapper {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    height: 130px;
+    align-items: center;
+}
+
+.first {
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: bold;
+}

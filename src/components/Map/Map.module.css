@@ -1,0 +1,12 @@
+@import "../../variables/variables.css";
+
+.wrapper {
+    margin-top: 40px;
+    height: 350px;
+    box-shadow: var(--shadow2);
+    margin-bottom: 40px;
+}
+
+.ymaps-2-1-79-map:first-child {
+    display: none;
+}

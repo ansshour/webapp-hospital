@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.module.scss';
+import './App.module.less';
 import { Header } from './components/Header/Header';
 import { LocationMap } from './components/Map/Map';
 import { Footer } from "./components/Footer/Footer"

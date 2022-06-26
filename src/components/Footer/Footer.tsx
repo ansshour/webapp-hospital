@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/esm/Container";
-import styles from './Footer.module.scss'
+import styles from './Footer.module.css'
 
 export const Footer = () => {
     return (

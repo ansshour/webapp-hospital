@@ -1,0 +1,8 @@
+
+:root {
+    --text-color: #212529;
+    --text-color-hover: #30353a;
+    --bg-color: #f5f5f5;
+    --shadow: rgba(34, 60, 80, 0.04);
+    --shadow2: 0px 2px 8px rgba(120, 160, 190, 0.3);
+}

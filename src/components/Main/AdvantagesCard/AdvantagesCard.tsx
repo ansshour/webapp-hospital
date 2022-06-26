@@ -1,4 +1,4 @@
-import styles from "./AdvantagesCard.module.scss"
+import styles from "./AdvantagesCard.module.css"
 import Col from 'react-bootstrap/Col'
 
 type Props = {

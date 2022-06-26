@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/esm/Container'
-import styles from './Main.module.scss'
+import styles from './Main.module.css'
 import Row from 'react-bootstrap/Row'
 import { AdvantagesCard } from './AdvantagesCard/AdvantagesCard'
 import { Slider } from "./Slider/Slider";
@@ -28,7 +28,7 @@ export const Main = () => {
             <Slider />
             <Container>
                 <div className={styles.containerInfo}>
-                    <h1 className={styles.globalTitle}>Больница высоких медицинских технологий им. М.Е.Иванова</h1>
+                    <h1 className={styles.globalTitle}>Клиника высоких медицинских технологий им. М.Е.Иванова</h1>
                     <Container>
                         <Row xl="4" lg='2' sm='2' xs="1">
                             {AdvantagesData.map(data => <AdvantagesCard image={data.image} title={data.title} description={data.description} />)}

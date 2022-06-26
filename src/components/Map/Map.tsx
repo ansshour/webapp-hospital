@@ -1,5 +1,5 @@
 import { Map, YMaps, Placemark } from "react-yandex-maps"
-import styles from "./Map.module.scss"
+import styles from "./Map.module.css"
 import { Container } from "react-bootstrap"
 import { useEffect } from "react"
 

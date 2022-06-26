@@ -1,4 +1,4 @@
-import styles from "./Header.module.scss"
+import styles from "./Header.module.css"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -16,47 +16,47 @@ export const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavDropdown title="О больнице" id="basic-nav-dropdown" className={styles.dropdown}>
-                                <NavDropdown.Item href="#action/3.1">Сведения о медицинской организации</NavDropdown.Item>
+                                <NavDropdown.Item href="/about_clinic">Сведения о медицинской организации</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.2">Режим и график работы</NavDropdown.Item>
+                                <NavDropdown.Item href="/working_hours">Режим и график работы</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.3">Лицензии</NavDropdown.Item>
+                                <NavDropdown.Item href="/licenses">Лицензии</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Отзывы</NavDropdown.Item>
+                                <NavDropdown.Item href="/reviews">Отзывы</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Направления" id="basic-nav-dropdown" className={styles.dropdown}>
-                                <NavDropdown.Item href="#action/4.1">Терапия</NavDropdown.Item>
+                                <NavDropdown.Item href="/therapy">Терапия</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.2">Гинекология</NavDropdown.Item>
+                                <NavDropdown.Item href="/gynecology">Гинекология</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.3">Хирургия</NavDropdown.Item>
+                                <NavDropdown.Item href="/surgery">Хирургия</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.4">Урология</NavDropdown.Item>
+                                <NavDropdown.Item href="/urology">Урология</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.5">Неврология</NavDropdown.Item>
+                                <NavDropdown.Item href="/neurology">Неврология</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.6">Оториноларингология</NavDropdown.Item>
+                                <NavDropdown.Item href="/otorhinolaryngology">Оториноларингология</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.7">Офтальмоголия</NavDropdown.Item>
+                                <NavDropdown.Item href="/ophthalmology">Офтальмоголия</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/4.8">Стоматология</NavDropdown.Item>
+                                <NavDropdown.Item href="/dentistry">Стоматология</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Специалисты" id="basic-nav-dropdown" className={styles.dropdown}>
-                                <NavDropdown.Item href="#action/5.1">Терапевты</NavDropdown.Item>
+                                <NavDropdown.Item href="/therapist">Терапевты</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.2">Гинекологи</NavDropdown.Item>
+                                <NavDropdown.Item href="/gynecologists">Гинекологи</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.3">Хирурги</NavDropdown.Item>
+                                <NavDropdown.Item href="/surgeon">Хирурги</NavDropdown.Item>
+                                <NavDropdown.Divider /> 
+                                <NavDropdown.Item href="/urologist">Урологи</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.4">Урологи</NavDropdown.Item>
+                                <NavDropdown.Item href="/neurologist">Неврологи</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.5">Неврологи</NavDropdown.Item>
+                                <NavDropdown.Item href="/otolaryngologist">Оториноларингологи</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.6">Оториноларингологи</NavDropdown.Item>
+                                <NavDropdown.Item href="/ophthalmologist">Офтальмологи</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.7">Офтальмологи</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/5.8">Стоматологи</NavDropdown.Item>
+                                <NavDropdown.Item href="/dentist">Стоматологи</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Платные услуги" id="basic-nav-dropdown" className={styles.dropdown}>
                                 <NavDropdown.Item href="#action/6.1">Консультации</NavDropdown.Item>
@@ -69,8 +69,9 @@ export const Header = () => {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/6.5">Молекулярная-генитическое исследование</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#features">Контакты</Nav.Link>
+                            <Nav.Link href="/contacts">Контакты</Nav.Link>
                         </Nav>
+                        
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

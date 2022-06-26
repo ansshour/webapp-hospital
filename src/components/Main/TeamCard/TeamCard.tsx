@@ -1,4 +1,4 @@
-import styles from "./TeamCard.module.scss";
+import styles from "./TeamCard.module.css";
 
 type Props = {
     image: string,

@@ -1,17 +1,16 @@
-import styles from "./Modal.module.scss";
-
+import styles from "../Modal/Modal.module.css"
 type Props = {
-    modalActive: boolean;
-    setModalActive: (arg: boolean) => void;
-    children: React.ReactNode;
-}
-
-export const Modal: React.FC<Props> = ({ modalActive, setModalActive, children }) => {
+    active: boolean;
+    setActive: (arg: boolean) => void;
+    children?: React.ReactNode;
+} 
+export const Modal = ({ active, setActive, children }: Props) => {
     return (
-        <div className={modalActive ? `${styles.modal} ${styles.active}` : `${styles.modal}`} onClick={() => { setModalActive(false) }}>
-            <div className={modalActive ? `${styles.content} ${styles.active}` : `${styles.content}`} onClick={(e) => e.stopPropagation()}>
-                {children}
+        <>
+            <div className={active ? `${styles.modal} ${styles.active}` : `${styles.modal}`}  onClick={() => setActive (false)}>
+                <div className={active ? `${styles.content} ${styles.active}` : `${styles.content}`} onClick={e => e.stopPropagation()}>
+                {children}</div>
             </div>
-        </div>
+        </>
     )
 }

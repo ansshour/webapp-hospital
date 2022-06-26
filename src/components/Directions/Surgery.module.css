@@ -1,0 +1,49 @@
+h1 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.image{
+    background-image: url(../../../public/image/7block/5.jpg);
+    background-size: cover;
+    background-position: center;
+    width:  1000px;
+    height: 600px;
+    display:block;
+    margin:auto;
+    margin-bottom: 35px;
+}
+.image2{
+    background-image: url(../../../public/image/7block/6.jpg);
+    background-size: cover;
+    background-position: center;
+    width:  1000px;
+    height: 600px;
+    display:block;
+    margin:auto;
+    margin-bottom: 35px;
+}
+.text{
+    margin-bottom: 20px;
+}
+
+.photo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+li {
+    margin-bottom: 10px;
+}
+h2 {
+    margin-bottom: 25px;
+} 
+.content2 {
+    display: flex;
+}
+.image3 {
+    background-image:  url(../../../public/image/7block/4.jpg);
+    width: 500px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}

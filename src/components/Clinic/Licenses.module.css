@@ -1,0 +1,14 @@
+@import "../../variables/variables.css";
+
+.download {
+    cursor: pointer;
+    color: brown;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.dowload:hover {
+    color: var(--text-color-hover);
+}

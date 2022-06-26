@@ -1,4 +1,4 @@
-import styles from "./NotFound.module.scss"
+import styles from "./NotFound.module.css"
 import { Container } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
