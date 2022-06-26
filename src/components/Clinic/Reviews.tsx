@@ -16,11 +16,22 @@ type reviewsData = {
 
 export const Reviews = () => {
 
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:4000/get_reviews")
+            .then(response => response.json())
+            .then(data => setData(data))
+    }, [])
+
 
 
     const [formInput, setFormInput] = useState({ nameInput: "", phoneInput: "", emailInput: "", reviewInput: "" })
 
+
     const [renderData, setRenderData] = useState<reviewsData | []>([])
+
+
 
     const changeName = (e: ChangeEvent<HTMLInputElement>) => {
         setFormInput({ nameInput: e.target.value, phoneInput: formInput.phoneInput, emailInput: formInput.emailInput, reviewInput: formInput.reviewInput })
@@ -37,9 +48,14 @@ export const Reviews = () => {
 
     const sendReview = async (e: any) => {
         e.preventDefault()
-        let renderDataCurrent: any = renderData;
-        renderDataCurrent.push(formInput);
-        setRenderData([...renderDataCurrent])
+        // let renderDataCurrent: any = renderData;
+        // renderDataCurrent.push(formInput);
+        // setRenderData([...renderDataCurrent])
+        await fetch(`http://localhost:4000/add_review/?name=${formInput.nameInput}&number=${formInput.phoneInput}&mail=${formInput.emailInput}&review=${formInput.reviewInput}`)
+        await fetch("http://localhost:4000/get_reviews")
+            .then(response => response.json())
+            .then(data => setData(data))
+
     }
 
     return (
@@ -65,7 +81,7 @@ export const Reviews = () => {
             </div>
 
             <div className={styles.reviewsList}>
-                {renderData.map(({ nameInput, reviewInput }, i) => <ReviewCard name={nameInput} text={reviewInput} key={i} />)}
+                {data.map(({ name, review }, i) => <ReviewCard name={name} text={review} key={i} />)}
             </div>
         </Container>
 

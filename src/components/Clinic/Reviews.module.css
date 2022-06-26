@@ -62,3 +62,31 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
+
+
+@media (max-width: 1400px) {
+    .reviewsList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .reviewsList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviewsList {
+        grid-template-columns: 1fr;
+    }
+
+    .reviewsContainer {
+        width: 100%;
+    }
+
+    .review,
+    .input {
+        width: 300px;
+    }
+}
