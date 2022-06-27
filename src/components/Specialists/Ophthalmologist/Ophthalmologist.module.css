@@ -3,15 +3,16 @@ h1 {
     margin-bottom: 25px;
 }
 .image{
-    background-image: url(../../../public/image/5block/house.jpg);
+    background-image: url(../../../../public/image/7block/101.jpg);
     background-size: cover;
     background-position: center;
     width:  1000px;
-    height: 350px;
+    height: 600px;
     display:block;
     margin:auto;
     margin-bottom: 35px;
 }
+
 .text{
     margin-bottom: 20px;
 }
@@ -27,3 +28,6 @@ li {
 h2 {
     margin-bottom: 25px;
 } 
+.content2 {
+    display: flex;
+}

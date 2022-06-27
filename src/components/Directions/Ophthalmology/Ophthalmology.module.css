@@ -20,7 +20,7 @@ h2 {
     margin-bottom: 25px;
 } 
 .image{
-    background-image: url(../../../public/image/7block/11.jpg);
+    background-image: url(../../../../public/image/7block/11.jpg);
     background-size: cover;
     background-position: center;
     width:  1000px;
@@ -30,7 +30,7 @@ h2 {
     margin-bottom: 35px;
 }
 .image2{
-    background-image: url(../../../public/image/7block/12.jpg);
+    background-image: url(../../../../public/image/7block/12.jpg);
     background-size: cover;
     background-position: center;
     width:  1000px;
@@ -44,7 +44,7 @@ h2 {
     display: flex;
 }
 .image3 {
-    background-image:  url(../../../public/image/7block/4.jpg);
+    background-image:  url(../../../../public/image/7block/4.jpg);
     width: 500px;
     height: 100px;
     background-size: cover;
@@ -60,7 +60,7 @@ h2 {
     margin-bottom: 35px;
 }
 .image4 {
-    background-image: url(../../../public/image/7block/13.jpg);
+    background-image: url(../../../../public/image/7block/13.jpg);
     background-size: cover;
     background-position: center;
     width:  1000px;

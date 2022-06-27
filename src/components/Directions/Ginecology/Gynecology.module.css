@@ -3,7 +3,7 @@ h1 {
     margin-bottom: 25px;
 }
 
-.text{
+.text {
     margin-bottom: 20px;
 }
 
@@ -12,37 +12,43 @@ h1 {
     width: 100%;
     justify-content: center;
 }
+
 li {
     margin-bottom: 10px;
 }
+
 h2 {
     margin-bottom: 25px;
-} 
-.image{
-    background-image: url(../../../public/image/7block/7.jpg);
+}
+
+.image {
+    background-image: url(../../../../public/image/7block/3.jpg);
     background-size: cover;
     background-position: center;
-    width:  1000px;
+    width: 1000px;
     height: 600px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     margin-bottom: 35px;
 }
-.image2{
-    background-image: url(../../../public/image/7block/8.jpg);
+
+.image2 {
+    background-image: url(../../../../public/image/7block/2.jpg);
     background-size: cover;
     background-position: center;
-    width:  1000px;
+    width: 1000px;
     height: 600px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     margin-bottom: 35px;
 }
+
 .content2 {
     display: flex;
 }
+
 .image3 {
-    background-image:  url(../../../public/image/7block/4.jpg);
+    background-image: url(../../../../public/image/7block/4.jpg);
     width: 500px;
     height: 100px;
     background-size: cover;

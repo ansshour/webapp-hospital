@@ -1,7 +1,7 @@
 import styles from "./Reviews.module.css"
 import { Container } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { ReviewCard } from "./Reviews/ReviewCard"
+import { ReviewCard } from "./ReviewCard"
 import { useState, ChangeEvent, useEffect } from "react";
 
 

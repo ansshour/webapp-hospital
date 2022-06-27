@@ -4,7 +4,7 @@
     
 }
 .image{
-    background-image: url(../../../public/image/4block/3.PNG);
+    background-image: url(../../../../public/image/4block/3.PNG);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -23,7 +23,7 @@ h1 {
     margin-top: 40px;
 }
 .image2{
-    background-image: url(../../../public/image/4block/3.PNG);
+    background-image: url(../../../../public/image/4block/3.PNG);
     background-size: cover;
     background-position: center;
     border-radius: 50%;

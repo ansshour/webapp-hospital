@@ -3,7 +3,7 @@ h1 {
     margin-bottom: 25px;
 }
 .image{
-    background-image: url(../../../public/image/7block/1.jpg);
+    background-image: url(../../../../public/image/7block/14.jpg);
     background-size: cover;
     background-position: center;
     width:  1000px;
@@ -12,6 +12,7 @@ h1 {
     margin:auto;
     margin-bottom: 35px;
 }
+
 .text{
     margin-bottom: 20px;
 }
@@ -27,3 +28,6 @@ li {
 h2 {
     margin-bottom: 25px;
 } 
+.content2 {
+    display: flex;
+}
