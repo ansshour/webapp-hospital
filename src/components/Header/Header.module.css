@@ -8,6 +8,25 @@
     background-color: white;
     border-radius: 50%;
 }
-a{
+
+
+a:hover {
+    color: var(--text-color);
+}
+
+.nav1 {
+    color: rgba(255, 255, 255, .55) !important;
+}
+
+.nav1:hover {
+    color: rgba(255, 255, 255, .75) !important;
+}
+
+a {
     width: auto !important;
+}
+
+.navdrop:active {
+    background-color: #e9ecef !important;
+    color: var(--text-color);
 }

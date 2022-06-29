@@ -89,6 +89,9 @@ export const BeforeHeader = () => {
             }
         }
         setFormValid(true)
+        fetch(`http://localhost:4000/sendmail?fio=${formInputs.fio}&dateBirth=${formInputs.dateBirth}&phone=${formInputs.phone}&address=${formInputs.address}&mail=${formInputs.email}&doctor=${formInputs.doctor}&date=${formInputs.date}`) // query сделать
+            .then(response => console.log(response))
+            .catch(err => console.log("Ошибка отправки."))
     }
 
     return (
@@ -120,7 +123,7 @@ export const BeforeHeader = () => {
                         <div className={styles.inputGroup}>
                             <label>Контактный телефон<span className={styles.red}>*</span></label>
                             <input className={styles.input} type="text" name="phone" value={formInputs.phone} onChange={onChangeFormHundler} />
-                            
+
                         </div>
                         <div className={styles.inputGroup}>
                             <label>Место жительства (адрес)<span className={styles.red}>*</span></label>
@@ -144,10 +147,10 @@ export const BeforeHeader = () => {
                             <label>Я согласен на обработку персональных данных</label>
                         </div>
 
-                        {formValid === false ? <p style = {{color: "red", fontWeight: "bold", position: "absolute"}}>Ошибка, не все поля заполнены верно!</p> : ""}
+                        {formValid === false ? <p className={styles.error}>Ошибка, не все поля заполнены верно!</p> : ""}
 
                         <div className={styles.inputGroupBtn}>
-                            <input className={styles.btn} type="button" name="name" value="Отправить" onClick = {sendForm} />
+                            <input className={styles.btn} type="button" name="name" value="Отправить" onClick={sendForm} />
                         </div>
                     </form>
                 </Modal>
